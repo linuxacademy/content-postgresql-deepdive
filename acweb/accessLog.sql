@@ -3,7 +3,6 @@ SET lock_timeout = 0;
 SET idle_in_transaction_session_timeout = 0;
 SET client_encoding = 'UTF8';
 SET standard_conforming_strings = on;
-SELECT pg_cataaccessLog.set_config('search_path', '', false);
 SET check_function_bodies = false;
 SET xmloption = content;
 SET client_min_messages = warning;
@@ -15,7 +14,7 @@ create table accessLog (
 	id VARCHAR(50),
 	username VARCHAR(50),
 	ip_address VARCHAR(20),
-	browser VARCHAR(50)
+	browser VARCHAR(200)
 );
 insert into accessLog (id, username, ip_address, browser) values ('69-6509540', 'efranzewitch0', '109.53.180.8', 'Mozilla/5.0 (Windows; U; Windows NT 6.0; hu-HU) AppleWebKit/533.19.4 (KHTML, like Gecko) Version/5.0.3 Safari/533.19.4');
 insert into accessLog (id, username, ip_address, browser) values ('68-3684169', 'pfellini1', '151.26.213.171', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.19 (KHTML, like Gecko) Ubuntu/11.10 Chromium/18.0.1025.142 Chrome/18.0.1025.142 Safari/535.19');
