@@ -1,0 +1,28 @@
+#### Install the PostgreSQL Software ####
+
+# Add the Repository.
+  sudo vi /etc/apt/sources.list.d/pgdg.list
+
+  deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main
+
+# Import the GPG Key.
+  wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+
+
+# Update Package List.
+  sudo apt-get update
+
+# Install PostgreSQL.
+  sudo apt install postgresql postgresql-contrib
+
+# Verify Service.
+  service postgresql status
+
+#### Connect as the Default User ####
+
+# Change to the postgres user and launch psql.
+  sudo su - postgres
+  psql
+
+# Secure postgres Role.
+  \password postgres
