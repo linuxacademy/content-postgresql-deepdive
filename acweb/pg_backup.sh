@@ -1,5 +1,9 @@
 #!/bin/bash
 
+################################################
+# Script for backing up the acweb database
+################################################
+
 # Backup directory and name suffix
 BACKUP_DIR=/var/lib/pgsql/backups
 FILE_SUFFIX=_pg_backupl.tar

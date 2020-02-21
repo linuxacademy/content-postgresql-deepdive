@@ -1,3 +1,7 @@
+--------------------------------------------------------------------------------------
+-- Script for creating the accessLog table. This logs connections from client systems.
+--------------------------------------------------------------------------------------
+
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET idle_in_transaction_session_timeout = 0;
@@ -8,14 +12,18 @@ SET xmloption = content;
 SET client_min_messages = warning;
 SET row_security = off;
 
+-- Connect to the acweb database
 \connect acweb
 
+-- Create the table
 create table accessLog (
 	id VARCHAR(50),
 	username VARCHAR(50),
 	ip_address VARCHAR(20),
 	browser VARCHAR(200)
 );
+
+-- Insert data
 insert into accessLog (id, username, ip_address, browser) values ('69-6509540', 'efranzewitch0', '109.53.180.8', 'Mozilla/5.0 (Windows; U; Windows NT 6.0; hu-HU) AppleWebKit/533.19.4 (KHTML, like Gecko) Version/5.0.3 Safari/533.19.4');
 insert into accessLog (id, username, ip_address, browser) values ('68-3684169', 'pfellini1', '151.26.213.171', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.19 (KHTML, like Gecko) Ubuntu/11.10 Chromium/18.0.1025.142 Chrome/18.0.1025.142 Safari/535.19');
 insert into accessLog (id, username, ip_address, browser) values ('85-6748744', 'lsearl2', '133.69.81.168', 'Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3 like Mac OS X; en-gb) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8F190 Safari/6533.18.5');
