@@ -1,3 +1,11 @@
+--------------------------------------------------------------------
+-- Source: Linux Acadamey PostgreSQL Administration Deep Dive Course
+-- Author: Landon Fowler
+-- Purpose: SQL script for loading the 'acweb' database
+-- Date Updated: 03/05/2020
+--------------------------------------------------------------------
+
+-- Load States
 insert into sales.state (name) values ('New York');
 insert into sales.state (name) values ('Virginia');
 insert into sales.state (name) values ('Missouri');
@@ -998,6 +1006,8 @@ insert into sales.state (name) values ('Minnesota');
 insert into sales.state (name) values ('Arizona');
 insert into sales.state (name) values ('North Carolina');
 insert into sales.state (name) values ('Maryland');
+
+-- Load Cities
 insert into sales.city (name, state_id) values ('Bethlehem', 494);
 insert into sales.city (name, state_id) values ('Nuits-Saint-Georges', 966);
 insert into sales.city (name, state_id) values ('Santo Niño', 772);
@@ -1998,6 +2008,8 @@ insert into sales.city (name, state_id) values ('Pingle', 853);
 insert into sales.city (name, state_id) values ('Le Havre', 161);
 insert into sales.city (name, state_id) values ('Sunzhuang', 639);
 insert into sales.city (name, state_id) values ('Hengshitang', 257);
+
+-- Load Addresses
 insert into sales.address (address, city_id, postal_code) values ('0761 Village Center', 442, null);
 insert into sales.address (address, city_id, postal_code) values ('0 Doe Crossing Drive', 913, null);
 insert into sales.address (address, city_id, postal_code) values ('07470 Dexter Pass', 814, '647 81');
@@ -2998,6 +3010,8 @@ insert into sales.address (address, city_id, postal_code) values ('9690 Clemons 
 insert into sales.address (address, city_id, postal_code) values ('1038 Meadow Ridge Pass', 813, null);
 insert into sales.address (address, city_id, postal_code) values ('5 Donald Court', 653, null);
 insert into sales.address (address, city_id, postal_code) values ('00 Bluestem Trail', 85, 'J1T');
+
+-- Load Customers
 insert into sales.customer (first_name, last_name, addr_id, email, phone) values ('Wernher', 'Daniely', 722, 'wdaniely0@businessinsider.com', '805-729-6171');
 insert into sales.customer (first_name, last_name, addr_id, email, phone) values (null, 'Robertshaw', 337, null, '524-630-0275');
 insert into sales.customer (first_name, last_name, addr_id, email, phone) values ('Bernie', 'McMurty', 831, 'bmcmurty2@hhs.gov', '489-628-5946');
@@ -3998,6 +4012,8 @@ insert into sales.customer (first_name, last_name, addr_id, email, phone) values
 insert into sales.customer (first_name, last_name, addr_id, email, phone) values ('Selig', 'Gout', 188, 'sgoutrp@hao123.com', '627-494-1413');
 insert into sales.customer (first_name, last_name, addr_id, email, phone) values ('Gilberta', 'Dolby', 266, 'gdolbyrq@princeton.edu', '171-216-3565');
 insert into sales.customer (first_name, last_name, addr_id, email, phone) values ('George', 'Ellsbury', 428, 'gellsburyrr@boston.com', '837-200-9380');
+
+-- Load Catagories
 insert into sales.category (name, description) values ('Baby', 'Baby and Toddler supplies and clothes');
 insert into sales.category (name, description) values ('Games', 'Board Games');
 insert into sales.category (name, description) values ('Automotive', 'Auto parts and accessories');
@@ -4010,6 +4026,8 @@ insert into sales.category (name, description) values ('Sports', 'Sports and out
 insert into sales.category (name, description) values ('Beauty', 'Makeup, lotions, and hair accessories');
 insert into sales.category (name, description) values ('Movies', 'Blu-ray and DVD');
 insert into sales.category (name, description) values ('Electronics', 'Televisions, tablets, smartphones, as well as video game consoles and games');
+
+-- Load Products
 insert into sales.products (name, cat_id, color, description, price) values ('Diapers', 1, 'White', 'Best for baby bums', 12.50);
 insert into sales.products (name, cat_id, color, description, price) values ('Wipes', 1, 'White', 'Organic solution to toxic problems', 8);
 insert into sales.products (name, cat_id, color, description, price) values ('Rattle', 1, 'Yellow', 'Soothing Toy', 4);
@@ -4046,6 +4064,8 @@ insert into sales.products (name, cat_id, color, description, price) values ('Sh
 insert into sales.products (name, cat_id, color, description, price) values ('MyPad', 12, 'Silver', 'It''s the best, because it''s made by them.', 500);
 insert into sales.products (name, cat_id, color, description, price) values ('ViewThings X11', 12, 'Black', '50'' TV', 200);
 insert into sales.products (name, cat_id, color, description, price) values ('Bingetendo Twitch', 12, 'Yellow', 'Cutting edge enough that we can charge full price.', 300);
+
+-- Load Payments
 insert into sales.payment (customer_id, amount, payment_date) values (620, 834.98, '4/25/2012');
 insert into sales.payment (customer_id, amount, payment_date) values (993, 584.2, '6/4/2019');
 insert into sales.payment (customer_id, amount, payment_date) values (845, 23.37, '1/4/2018');
@@ -5046,6 +5066,8 @@ insert into sales.payment (customer_id, amount, payment_date) values (578, 1370.
 insert into sales.payment (customer_id, amount, payment_date) values (393, 91.43, '8/26/2019');
 insert into sales.payment (customer_id, amount, payment_date) values (980, 338.62, '4/6/2017');
 insert into sales.payment (customer_id, amount, payment_date) values (515, 1583.43, '10/26/2013');
+
+-- Load Staff
 insert into hr.staff (first_name, last_name, addr_id, email, phone, active, username) values (null, 'Falco', 685, 'efalco0@hibu.com', '498-525-4675', false, 'vfalco0');
 insert into hr.staff (first_name, last_name, addr_id, email, phone, active, username) values ('Caitlin', 'Machon', 658, 'cmachon1@whitehouse.gov', '113-962-6940', false, 'cmachon1');
 insert into hr.staff (first_name, last_name, addr_id, email, phone, active, username) values ('Dorthea', 'Goldis', 75, 'dgoldis2@nyu.edu', '333-776-2307', true, 'dgoldis2');
