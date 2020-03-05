@@ -1,3 +1,10 @@
+--------------------------------------------------------------------
+-- Source: Linux Acadamey PostgreSQL Administration Deep Dive Course
+-- Author: Landon Fowler
+-- Purpose: SQL script for loading the sales.products table of 'acweb'
+-- Date Updated: 03/05/2020
+--------------------------------------------------------------------
+
 insert into sales.products (name, cat_id, color, description, price) values ('Diapers', 1, 'White', 'Best for baby bums', 12.50);
 insert into sales.products (name, cat_id, color, description, price) values ('Wipes', 1, 'White', 'Organic solution to toxic problems', 8);
 insert into sales.products (name, cat_id, color, description, price) values ('Rattle', 1, 'Yellow', 'Soothing Toy', 4);

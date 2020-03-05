@@ -1,3 +1,10 @@
+--------------------------------------------------------------------
+-- Source: Linux Acadamey PostgreSQL Administration Deep Dive Course
+-- Author: Landon Fowler
+-- Purpose: SQL script for loading the hr.staff table of 'acweb'
+-- Date Updated: 03/05/2020
+--------------------------------------------------------------------
+
 insert into hr.staff (first_name, last_name, addr_id, email, phone, active, username) values (null, 'Falco', 685, 'efalco0@hibu.com', '498-525-4675', false, 'vfalco0');
 insert into hr.staff (first_name, last_name, addr_id, email, phone, active, username) values ('Caitlin', 'Machon', 658, 'cmachon1@whitehouse.gov', '113-962-6940', false, 'cmachon1');
 insert into hr.staff (first_name, last_name, addr_id, email, phone, active, username) values ('Dorthea', 'Goldis', 75, 'dgoldis2@nyu.edu', '333-776-2307', true, 'dgoldis2');

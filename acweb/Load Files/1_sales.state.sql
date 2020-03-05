@@ -1,3 +1,10 @@
+--------------------------------------------------------------------
+-- Source: Linux Acadamey PostgreSQL Administration Deep Dive Course
+-- Author: Landon Fowler
+-- Purpose: SQL script for loading the sales.state table of 'acweb'
+-- Date Updated: 03/05/2020
+--------------------------------------------------------------------
+
 insert into sales.state (name) values ('New York');
 insert into sales.state (name) values ('Virginia');
 insert into sales.state (name) values ('Missouri');

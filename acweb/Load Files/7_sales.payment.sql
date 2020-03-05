@@ -1,3 +1,10 @@
+--------------------------------------------------------------------
+-- Source: Linux Acadamey PostgreSQL Administration Deep Dive Course
+-- Author: Landon Fowler
+-- Purpose: SQL script for loading the sales.payment table of 'acweb'
+-- Date Updated: 03/05/2020
+--------------------------------------------------------------------
+
 insert into sales.payment (customer_id, amount, payment_date) values (620, 834.98, '4/25/2012');
 insert into sales.payment (customer_id, amount, payment_date) values (993, 584.2, '6/4/2019');
 insert into sales.payment (customer_id, amount, payment_date) values (845, 23.37, '1/4/2018');

@@ -1,3 +1,10 @@
+--------------------------------------------------------------------
+-- Source: Linux Acadamey PostgreSQL Administration Deep Dive Course
+-- Author: Landon Fowler
+-- Purpose: SQL script for loading the sales.city table of 'acweb'
+-- Date Updated: 03/05/2020
+--------------------------------------------------------------------
+
 insert into sales.city (name, state_id) values ('Bethlehem', 494);
 insert into sales.city (name, state_id) values ('Nuits-Saint-Georges', 966);
 insert into sales.city (name, state_id) values ('Santo Niño', 772);

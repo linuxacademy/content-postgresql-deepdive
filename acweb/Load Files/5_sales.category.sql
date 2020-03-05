@@ -1,3 +1,10 @@
+--------------------------------------------------------------------
+-- Source: Linux Acadamey PostgreSQL Administration Deep Dive Course
+-- Author: Landon Fowler
+-- Purpose: SQL script for loading the sales.category table of 'acweb'
+-- Date Updated: 03/05/2020
+--------------------------------------------------------------------
+
 insert into sales.category (name, description) values ('Baby', 'Baby and Toddler supplies and clothes');
 insert into sales.category (name, description) values ('Games', 'Board Games');
 insert into sales.category (name, description) values ('Automotive', 'Auto parts and accessories');

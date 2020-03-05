@@ -1,3 +1,10 @@
+--------------------------------------------------------------------
+-- Source: Linux Acadamey PostgreSQL Administration Deep Dive Course
+-- Author: Landon Fowler
+-- Purpose: SQL script for loading the sales.customer table of 'acweb'
+-- Date Updated: 03/05/2020
+--------------------------------------------------------------------
+
 insert into sales.customer (first_name, last_name, addr_id, email, phone) values ('Wernher', 'Daniely', 722, 'wdaniely0@businessinsider.com', '805-729-6171');
 insert into sales.customer (first_name, last_name, addr_id, email, phone) values (null, 'Robertshaw', 337, null, '524-630-0275');
 insert into sales.customer (first_name, last_name, addr_id, email, phone) values ('Bernie', 'McMurty', 831, 'bmcmurty2@hhs.gov', '489-628-5946');

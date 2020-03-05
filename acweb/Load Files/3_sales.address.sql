@@ -1,3 +1,10 @@
+--------------------------------------------------------------------
+-- Source: Linux Acadamey PostgreSQL Administration Deep Dive Course
+-- Author: Landon Fowler
+-- Purpose: SQL script for loading the sales.address table of 'acweb'
+-- Date Updated: 03/05/2020
+--------------------------------------------------------------------
+
 insert into sales.address (address, city_id, postal_code) values ('0761 Village Center', 442, null);
 insert into sales.address (address, city_id, postal_code) values ('0 Doe Crossing Drive', 913, null);
 insert into sales.address (address, city_id, postal_code) values ('07470 Dexter Pass', 814, '647 81');
