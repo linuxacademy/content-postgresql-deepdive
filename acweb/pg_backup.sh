@@ -1,8 +1,11 @@
 #!/bin/bash
 
-################################################
-# Script for backing up the acweb database
-################################################
+###################################################################
+# Source: Linux Acadamey PostgreSQL Administration Deep Dive Course
+# Author: Landon Fowler
+# Purpose: Script for backing up the acweb database
+# Date Updated: 03/05/2020
+###################################################################
 
 # Backup directory and name suffix
 BACKUP_DIR=/var/lib/pgsql/backups
