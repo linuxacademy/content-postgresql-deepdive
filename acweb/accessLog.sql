@@ -1,6 +1,9 @@
---------------------------------------------------------------------------------------
--- Script for creating the accessLog table. This logs connections from client systems.
---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+-- Source: Linux Acadamey PostgreSQL Administration Deep Dive Course
+-- Author: Landon Fowler
+-- Purpose: SQL script for creating the accessLog table. This logs connections from client systems.
+-- Date Updated: 03/05/2020
+---------------------------------------------------------------------------------------------------
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
