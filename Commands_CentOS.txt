@@ -1,3 +1,10 @@
+######################################################################
+# Source: Linux Acadamey PostgreSQL Administration Deep Dive Course
+# Author: Landon Fowler
+# Purpose: Provide the commands for installing PostgreSQL on CentOS 7
+# Date Updated: 03/10/2020
+######################################################################
+
 #### Install the PostgreSQL Software ####
 
 # Open the distribution .repo file in vi.

@@ -1,9 +1,11 @@
 #!/bin/bash
 
-
-################################################
-# Script to gennerate loade on PostgreSQL server
-################################################
+###################################################################
+# Source: Linux Acadamey PostgreSQL Administration Deep Dive Course
+# Author: Landon Fowler
+# Purpose: Script to generate load on the PostgreSQL server
+# Date Updated: 03/10/2020
+###################################################################
 
 
 #Iterator
@@ -20,7 +22,7 @@ run_sql () {
 
 
 
-#Infinitely loop and call our function
+#Infinitely loop and call the run_sql function
 while [ $i -lt 2 ]
 do
   run_sql
