@@ -9,4 +9,5 @@ Welcome to the official repo for the Linux Academy "PostgreSQL Administration De
 I hope that this content is useful both for those in the course as well as anyone else wanting to start or continue learning PostgreSQL.
 
 Happy learning!
+
 Landon Fowler
