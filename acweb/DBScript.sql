@@ -1,9 +1,11 @@
---------------------------------------------------------------------
+------------------------------------------------------------------------
 -- Source: Linux Acadamey PostgreSQL Administration Deep Dive Course
 -- Author: Landon Fowler
--- Purpose: SQL script for creating the 'acweb' database
+-- Purpose: SQL script for creating the 'acweb' database structures.
+--   This is for easily studying the structure information.
+--   To recreate the database in full, please use the backup 'acweb.tar.
 -- Date Updated: 03/05/2020
---------------------------------------------------------------------
+------------------------------------------------------------------------
 
 -- Create the database (Commented out as this is done separately in the lab.)
 -- CREATE DATABASE acweb;
